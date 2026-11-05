@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex,nofollow" />
+    <title>Your School · Your digital campus</title>
+    <link rel="icon" href="assets/school-crest.svg" />
+    <link rel="stylesheet" href="portal.css" />
+    <link rel="stylesheet" href="contact-dock.css" />
+    <link rel="stylesheet" href="pitch-motion.css" />
+    <link rel="stylesheet" href="mobile.css" />
+  </head>
+  <body>
+    <div id="app"></div>
+    <dialog id="campus-dialog" aria-labelledby="dialog-title">
+      <div class="dialog-top">
+        <div>
+          <span class="overline" id="dialog-context">YOUR SCHOOL DIGITAL CAMPUS</span>
+          <h2 id="dialog-title"></h2>
+        </div>
+        <button class="icon-button dialog-close" aria-label="Close dialog">
+          ×
+        </button>
+      </div>
+      <div id="dialog-body"></div>
+    </dialog>
+    <div id="toast" role="status" aria-live="polite"></div>
+    <script type="module" src="js/portal.js"></script>
+    <aside class="contact-dock" aria-label="Contact the school">
+      <a
+        class="contact-shortcut contact-shortcut--whatsapp"
+        href="index.html#enquire"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Explore the sample admissions enquiry"
+      >
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16v13H9l-5 4V4Z"/><path d="M8 8h8M8 12h5"/></svg>
+        <span class="contact-shortcut__label">Try an enquiry</span>
+      </a>
+      <a class="contact-shortcut contact-shortcut--call" href="portal.html" aria-label="Open the demo workspaces">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+        <span class="contact-shortcut__label">Try the workspaces</span>
+      </a>
+    </aside>
+  </body>
+</html>

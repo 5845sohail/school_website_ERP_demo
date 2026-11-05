@@ -1,0 +1,73 @@
+/* Shared contact shortcuts. Keep them outside scroll and typewriter effects. */
+.contact-dock {
+  position: fixed;
+  right: max(22px, env(safe-area-inset-right));
+  bottom: max(22px, env(safe-area-inset-bottom));
+  z-index: 60;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.contact-shortcut {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  border: 1px solid #ffffffd9;
+  border-radius: 16px 16px 16px 6px;
+  text-decoration: none;
+  box-shadow: 0 5px 16px #233e3026, 0 2px 0 #203d2d19;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+  -webkit-tap-highlight-color: transparent;
+}
+.contact-shortcut:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px #233e3030;
+}
+.contact-shortcut:active { transform: translateY(1px); }
+.contact-shortcut:focus-visible {
+  outline: 3px solid #8ca6dd;
+  outline-offset: 4px;
+}
+.contact-shortcut svg { width: 26px; height: 26px; }
+.contact-shortcut--whatsapp { background: #218c53; color: #fff; }
+.contact-shortcut--call { background: #faf9f4; color: #304e3e; border-color: #ccd6c4; }
+.contact-shortcut__label {
+  position: absolute;
+  right: calc(100% + 12px);
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 8px 13px;
+  border: 1px solid #dce3d3;
+  border-radius: 5px;
+  background: #fffef9;
+  color: #36503e;
+  box-shadow: 0 4px 14px #233e3010;
+  font: 500 12px/1.4 "DM Sans", sans-serif;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 180ms ease, visibility 180ms ease;
+}
+.contact-shortcut:hover .contact-shortcut__label,
+.contact-shortcut:focus-visible .contact-shortcut__label {
+  opacity: 1;
+  visibility: visible;
+}
+body:has(dialog[open]) .contact-dock,
+body:has(.sidebar.open) .contact-dock { visibility: hidden; }
+@media (max-width: 700px) {
+  .contact-dock {
+    right: max(14px, env(safe-area-inset-right));
+    bottom: max(16px, env(safe-area-inset-bottom));
+    gap: 10px;
+  }
+  .contact-shortcut { width: 48px; height: 48px; border-radius: 14px 14px 14px 5px; }
+  .contact-shortcut svg { width: 24px; height: 24px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .contact-shortcut, .contact-shortcut__label { transition: none; }
+}
+@media print { .contact-dock { display: none; } }

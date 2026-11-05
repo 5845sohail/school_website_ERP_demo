@@ -1,0 +1,9 @@
+{
+  "name": "school-website-erp-demo",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "python3 -m http.server 4319 --directory dist",
+    "check": "node scripts/check.mjs"
+  }
+}

@@ -1,0 +1,361 @@
+/* Mobile corrections shared by the public website and campus panels. */
+html {
+  -webkit-text-size-adjust: 100%;
+}
+.sidebar-scrim {
+  display: none;
+}
+.site-header .mobile-nav-contact {
+  display: none;
+}
+body.workspace-menu-open {
+  overflow: hidden;
+}
+.chart-col,
+.chart-bars {
+  min-width: 0;
+}
+
+@media (max-width: 760px) {
+  .site-header {
+    gap: 12px;
+  }
+  .site-header .menu-button {
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    flex-shrink: 0;
+  }
+  .site-header nav {
+    top: calc(100% - 1px);
+    gap: 3px;
+    padding: 16px;
+  }
+  .site-header nav a {
+    display: flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 9px 10px;
+    font-size: 14px;
+  }
+  .site-header .button {
+    white-space: nowrap;
+    min-height: 44px;
+  }
+  .hero {
+    min-height: 0;
+    padding-bottom: 64px;
+  }
+  .hero h1 {
+    font-size: clamp(32px, 9.6vw, 60px);
+    letter-spacing: -1.4px;
+    line-height: 1.17;
+  }
+  .hero-world {
+    height: clamp(310px, 90vw, 430px);
+    margin-top: 24px;
+  }
+  .hero-scroll {
+    bottom: 18px;
+    min-height: 36px;
+    display: flex;
+    align-items: center;
+    font-size: 8px;
+  }
+  .hero .eyebrow {
+    font-size: 8px;
+    line-height: 1.8;
+  }
+  .hero-actions > a,
+  .stage-button,
+  #gallery-open {
+    min-height: 44px;
+  }
+  .scene-caption {
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    bottom: 28px;
+  }
+  .scene-caption > span {
+    font-size: 7px;
+  }
+  .scene-caption button {
+    min-height: 44px;
+    font-size: 10px;
+    padding: 10px 12px;
+  }
+  .scene-hint {
+    bottom: 8px;
+  }
+  .site-header .mobile-nav-contact {
+    display: flex;
+  }
+  .enquiry-form input:not([type="checkbox"]),
+  .enquiry-form select,
+  .enquiry-form textarea {
+    font-size: 16px;
+    min-height: 48px;
+    min-width: 0;
+  }
+  .enquiry-form label {
+    min-width: 0;
+  }
+  .enquiry-form textarea {
+    min-height: 120px;
+  }
+  .enquiry-form .check-label {
+    font-size: 11px;
+    line-height: 1.8;
+  }
+  .check-label input {
+    margin-top: 3px;
+    width: 20px;
+    height: 20px;
+  }
+  .faq-section summary {
+    min-height: 44px;
+    align-items: center;
+  }
+  .gallery-controls {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+  .gallery-controls button,
+  .modal-close {
+    min-width: 44px;
+    min-height: 44px;
+  }
+  .gallery-controls > span {
+    order: 3;
+    width: 100%;
+    text-align: center;
+  }
+  footer {
+    padding-bottom: 86px;
+  }
+}
+
+@media (max-width: 700px) {
+  .site-header .mobile-nav-contact {
+    display: flex;
+  }
+  .app-header {
+    gap: 8px;
+    padding-inline: 12px;
+  }
+  .app-header .mobile-menu-button,
+  .notification-button {
+    width: 44px;
+    height: 44px;
+    flex-shrink: 0;
+  }
+  .app-header .breadcrumb {
+    min-width: 0;
+    overflow: hidden;
+    font-size: 11px;
+  }
+  .breadcrumb > b {
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .top-actions {
+    gap: 4px;
+    flex-shrink: 0;
+  }
+  .switch-button {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    padding-inline: 6px;
+    font-size: 11px;
+  }
+  .sidebar-scrim.visible {
+    display: block;
+  }
+  .sidebar .nav-link,
+  .sidebar-exit {
+    min-height: 44px;
+  }
+  .sidebar-help button {
+    min-height: 44px;
+  }
+  .welcome-banner .banner-art {
+    display: none;
+  }
+  .welcome-banner h2,
+  .welcome-banner p {
+    max-width: none;
+  }
+  .page-heading,
+  .heading-actions {
+    min-width: 0;
+    flex-wrap: wrap;
+  }
+  .heading-actions {
+    max-width: 100%;
+  }
+  .workspace .btn,
+  #campus-dialog .btn,
+  .role-card .btn {
+    min-height: 44px;
+    white-space: normal;
+    text-align: center;
+  }
+  .workspace input:not([type="checkbox"]),
+  .workspace select,
+  .workspace textarea,
+  #campus-dialog input:not([type="checkbox"]),
+  #campus-dialog select,
+  #campus-dialog textarea {
+    font-size: 16px;
+    min-height: 44px;
+    min-width: 0;
+  }
+  .workspace .table-search input {
+    width: 100%;
+  }
+  .workspace .filter-row select {
+    flex: 1;
+    width: auto;
+  }
+  .workspace .filter-row {
+    min-width: 0;
+  }
+  .workspace .table-search {
+    min-width: 150px;
+  }
+  .workspace .table-actions .text-button,
+  .workspace .table-actions .icon-button,
+  .workspace .tabs button {
+    min-height: 44px;
+  }
+  .table-container td select {
+    min-width: 125px;
+  }
+  .workspace .chart {
+    gap: clamp(5px, 2vw, 10px);
+    padding-inline: 0;
+  }
+  .chart-col > span {
+    font-size: 8px;
+  }
+  .collection-summary {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .donut-layout {
+    gap: 18px;
+  }
+  .attendance-key {
+    min-width: 0;
+  }
+  .attendance-key div {
+    gap: 10px;
+  }
+  #campus-dialog {
+    max-height: calc(100dvh - 32px);
+    padding: 24px 18px;
+  }
+  #campus-dialog .dialog-close {
+    width: 44px;
+    height: 44px;
+    flex-shrink: 0;
+  }
+  .form-actions {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .form-actions > button {
+    flex: 1;
+  }
+  .app-footer {
+    padding-bottom: 86px;
+  }
+  .gateway-note {
+    padding-bottom: 72px;
+  }
+  .contact-dock {
+    flex-direction: row;
+    gap: 9px;
+  }
+  body:has(input:focus, select:focus, textarea:focus) .contact-dock {
+    visibility: hidden;
+  }
+}
+@media (max-width: 480px) {
+  .site-header .header-actions > .button {
+    display: none;
+  }
+  .site-header {
+    justify-content: space-between;
+  }
+  .form-row,
+  .form-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .form-row {
+    gap: 0;
+  }
+  .form-grid .full-width {
+    grid-column: 1;
+  }
+}
+@media (max-width: 360px) {
+  .app-header .profile-menu {
+    display: none;
+  }
+  .hero-copy {
+    padding-top: 32px;
+  }
+  .hero-actions {
+    gap: 16px;
+  }
+  .office-note {
+    flex-wrap: wrap;
+    gap: 6px 12px;
+  }
+  .donut {
+    width: 105px;
+    height: 105px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .enquiry-form input:not([type="checkbox"]),
+  .enquiry-form select,
+  .enquiry-form textarea,
+  .workspace input:not([type="checkbox"]),
+  .workspace select,
+  .workspace textarea,
+  #campus-dialog input:not([type="checkbox"]),
+  #campus-dialog select,
+  #campus-dialog textarea {
+    font-size: 16px;
+    min-height: 44px;
+  }
+}
+@media (min-width: 701px) and (max-width: 1024px) {
+  .site-header .button,
+  .stage-button,
+  #gallery-open,
+  .scene-caption button,
+  .gallery-controls button,
+  .modal-close,
+  .workspace .btn,
+  #campus-dialog .btn,
+  .sidebar .nav-link {
+    min-height: 44px;
+  }
+  .icon-button,
+  .modal-close {
+    min-width: 44px;
+    min-height: 44px;
+  }
+}
+@media (min-width: 701px) and (max-width: 1024px) {
+  body:has(input:focus, select:focus, textarea:focus) .contact-dock { visibility: hidden; }
+}
